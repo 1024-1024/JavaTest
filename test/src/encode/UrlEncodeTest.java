@@ -21,6 +21,9 @@ public class UrlEncodeTest {
 			System.out.println(URLEncoder.encode("+", "utf-8"));
 			System.out.println("-------------------");
 			
+			
+			
+			
 			System.out.println(URLEncoder.encode(" -.*_","utf-8"));
 			System.out.println(URLDecoder.decode(" -.*_","utf-8"));
 			System.out.println("-------------------");
