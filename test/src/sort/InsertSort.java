@@ -8,6 +8,12 @@ package sort;
 public class InsertSort {
 	public static void main(String[] args) {
 		int[] a = Utils.createArray(10);
+		insertSort(a);
+		Utils.printArray(a);
+	}
+
+	public static void insertSort(int[] a) {
+		System.out.println("插入排序");
 		for (int i = 1; i < a.length; i++) {
 			int temp = a[i];
 			int j = i - 1;
@@ -19,7 +25,6 @@ public class InsertSort {
 				a[j + 1] = temp;
 			}
 		}
-		
 		Utils.printArray(a);
 	}
 }

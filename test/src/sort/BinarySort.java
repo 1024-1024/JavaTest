@@ -8,6 +8,12 @@ package sort;
 public class BinarySort {
 	public static void main(String[] args) {
 		int[] a = Utils.createArray(10);
+		binarySort(a);
+		Utils.printArray(a);
+	}
+
+	public static void binarySort(int[] a) {
+		System.out.println("二分插入排序");
 		for (int i = 1; i < a.length; i++) {
 			int temp = a[i];
 			int left = 0;
@@ -26,7 +32,6 @@ public class BinarySort {
 			}
 			a[left] = temp;
 		}
-		
 		Utils.printArray(a);
 	}
 }
