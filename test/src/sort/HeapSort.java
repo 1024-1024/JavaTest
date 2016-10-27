@@ -13,7 +13,8 @@ public class HeapSort {
 		Utils.printArray(a);
 	}
 
-	private static void heapSort(int[] arr) {
+	public static void heapSort(int[] arr) {
+		System.out.println("堆排序：");
 		// 将待排序的序列构建成一个大顶堆  
         for (int i = arr.length / 2; i >= 0; i--){   
             heapAdjust(arr, i, arr.length);   
@@ -23,7 +24,8 @@ public class HeapSort {
         for (int i = arr.length - 1; i > 0; i--) {   
             swap(arr, 0, i); // 将堆顶记录和当前未经排序子序列的最后一个记录交换  
             heapAdjust(arr, 0, i); // 交换之后，需要重新检查堆是否符合大顶堆，不符合则要调整  
-        } 		
+        } 
+        Utils.printArray(arr);
 	}
 	
 	/** 

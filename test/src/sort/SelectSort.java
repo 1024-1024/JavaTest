@@ -9,6 +9,12 @@ package sort;
 public class SelectSort {
 	public static void main(String[] args) {
 		int[] a = Utils.createArray(10);
+		selectSort(a);
+		Utils.printArray(a);
+	}
+
+	public static void selectSort(int[] a) {
+		System.out.println("选择排序");
 		for (int i = 0; i < a.length; i++) {
 			int temp = a[i];
 			int index = i;

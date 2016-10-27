@@ -7,7 +7,13 @@ package sort;
  */
 public class BubblingSort {
 	public static void main(String[] args) {
-		int[] array = {5,6,78,9,0,-5,6,7,8,90,3,4,56,7,8,93,45,6,78,9};
+		int[] array = Utils.createArray(10);
+		bubbleSort(array);
+		Utils.printArray(array);
+	}
+
+	public static void bubbleSort(int[] array) {
+		System.out.println("冒泡排序");
 		int length = array.length;
 		for(int i = 0 ; i < length; i ++) {
 			for (int j = 0; j < length - 1 - i; j++) {
